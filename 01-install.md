@@ -46,14 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I wasn't sure which version of Python would be required for the Metis Data Science bootcamp, so I chose 2 as the safer (more compatible) option. I'll happily switch to 3 if it's cool with the instructors.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+from the command line: python -V
  
 
 
