@@ -67,6 +67,7 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> Sublime. I like the look and feel, lots of nice features and it's highly configurable; I've tried several editors over the years, but keep coming back to Sublime. Interesting features include code coloring, auto-complete, whitespace management, command palette and multi-edit (multiple column edit). Useful shortcuts include build - cmd-B, new file cmd-N, command palette shift-cmd-P, change tab cmd - opt - ← / →.
+>> - Sublime. I like the look and feel, lots of nice features and it's highly configurable; I've tried several editors over the years, but keep coming back to Sublime.
+- Interesting features include code coloring, auto-complete, whitespace management, command palette and multi-edit (multiple column edit). Useful shortcuts include build - cmd-B, new file cmd-N, command palette shift-cmd-P, change tab cmd - opt - ← / →.
 
  
