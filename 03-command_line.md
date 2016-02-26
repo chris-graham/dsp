@@ -38,13 +38,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > ls: lists all unhidden files and directories in the current directory
-> > ls -a: lists all files and directories in the current directory (including hidden ones)
-> > ls -l: lists all unhidden files and directories in the current directory in long format (one per line including permissions, owner, group, size, modified date); also displays the total size of all files and directories
-> > ls -lh: long listing and limits the file size to 3 digits w/unit (byte, kilobyte, megabyte, etc...) in base 2
-> > ls -lah: long listing that includes hidden files and directories, and displays a 3 digit file size w/unit
-> > ls -t: sorts list by modified time (most recently modified first)
-> > ls -Glp: long listing that enables colorized output and writes a "/" after each directory
+> > - ls: lists all unhidden files and directories in the current directory
+- ls -a: lists all files and directories in the current directory (including hidden ones)
+- ls -l: lists all unhidden files and directories in the current directory in long format (one per line including permissions, owner, group, size, modified date); also displays the total size of all files and directories
+- ls -lh: long listing and limits the file size to 3 digits w/unit (byte, kilobyte, megabyte, etc...) in base 2
+- ls -lah: long listing that includes hidden files and directories, and displays a 3 digit file size w/unit
+- ls -t: sorts list by modified time (most recently modified first)
+- ls -Glp: long listing that enables colorized output and writes a "/" after each directory
 
 ---
 
@@ -52,7 +52,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > ls -l, ls -R, ls -a, ls -F, ls -t. I alias ll to ls -Fal on my machine, so that gets used a lot. -R and -t are new to me and seem pretty useful.
+> > - ls -l
+- ls -R
+- ls -a
+- ls -F
+- ls -t
+- I alias ll to ls -Fal on my machine, so that gets used a lot. -R and -t are new to me and seem pretty useful.
 
 ---
 
@@ -60,7 +65,5 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > xargs takes input from one command and tokenizes it for input into another command. Example: find . -name "*.py" | xargs rm -rf
-
- 
-
+> > - xargs takes input from one command and tokenizes it for input into another command
+- Example: find . -name "*.py" | xargs rm -rf
