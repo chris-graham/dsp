@@ -13,16 +13,16 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > xargs: takes input from one command and tokenizes it for input into another command
-ls -R & ls -t: -R lists files in the current directory and all sub directories; ls -t lists files in order of their modified time (newest first)
-pushd / popd: pushd saves your location when you navigate to another directory; popd returns you to the last saved location
-find: searches for a given filename
-grep: searches for a string contained inside files
-touch: creates a file with the given name or updates the modify timestamp on an existing file
-sudo: executes given command as a super user
-pwd: shows your current path
-which -a: lists all instances of executables found; very handy when you can't figure out why your computer is executing the wrong version of git!
-mkdir -P: creates all intermediate directories
+> > - xargs: takes input from one command and tokenizes it for input into another command
+- ls -R & ls -t: -R lists files in the current directory and all sub directories; ls -t lists files in order of their modified time (newest first)
+- pushd / popd: pushd saves your location when you navigate to another directory; popd returns you to the last saved location
+- find: searches for a given filename
+- grep: searches for a string contained inside files
+- touch: creates a file with the given name or updates the modify timestamp on an existing file
+- sudo: executes given command as a super user
+- pwd: shows your current path
+- which -a: lists all instances of executables found; very handy when you can't figure out why your computer is executing the wrong version of git!
+- mkdir -P: creates all intermediate directories
 
 
 ---
