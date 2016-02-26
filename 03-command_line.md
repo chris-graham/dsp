@@ -13,7 +13,17 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs: takes input from one command and tokenizes it for input into another command
+> > ls -R & ls -t: -R lists files in the current directory and all sub directories; ls -t lists files in order of their modified time (newest first)
+> > pushd / popd: pushd saves your location when you navigate to another directory; popd returns you to the last saved location
+> > find: searches for a given filename
+> > grep: searches for a string contained inside files
+> > touch: creates a file with the given name or updates the modify timestamp on an existing file
+> > sudo: executes given command as a super user
+> > pwd: shows your current path
+> > which -a: lists all instances of executables found; very handy when you can't figure out why your computer is executing the wrong version of git!
+> > mkdir -P: creates all intermediate directories
+
 
 ---
 
@@ -42,7 +52,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > ls -l, ls -R, ls -a, ls -F, ls -t; I alias ll to ls -Fal on my machine, so that gets used a lot. -R and -t are new to me and seem pretty useful.
+> > ls -l, ls -R, ls -a, ls -F, ls -t. I alias ll to ls -Fal on my machine, so that gets used a lot. -R and -t are new to me and seem pretty useful.
 
 ---
 
