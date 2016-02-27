@@ -18,7 +18,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+
+    if count < 10:
+        return 'Number of donuts: ' + str(count)
+    else:
+        return 'Number of donuts: many'
 
 
 def both_ends(s):
@@ -37,7 +41,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+
+    if len(s) < 2:
+        return ''
+    else:
+        return s[0:2] + s[len(s)-2:]
 
 
 def fix_start(s):
@@ -56,7 +64,8 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+
+    return s[0] + s.replace(s[0], '*')[1:]
 
 
 def mix_up(a, b):
@@ -74,7 +83,11 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+
+    temp = b[0:2] + a[2:]
+    b = a[0:2] + b[2:]
+
+    return temp + ' ' + b
 
 
 def verbing(s):
@@ -91,7 +104,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+
+    if len(s) < 3:
+        return s
+    elif s.endswith('ing'):
+        return s + 'ly'
+    else:
+        return s + 'ing'
 
 
 def not_bad(s):
@@ -111,7 +130,11 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+
+    if s.find('not') < s.find('bad'):
+        return s[0:s.find('not')] + 'good' + s[s.find('bad')+3:]
+    else:
+        return s
 
 
 def front_back(a, b):
@@ -130,4 +153,24 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+
+    afront = ''
+    aback = ''
+    bfront = ''
+    bback = ''
+
+    if len(a) % 2 == 0:
+        afront = a[0:len(a)/2]
+        aback = a[len(a)/2:]
+    else:
+        afront = a[0:len(a)/2+1]
+        aback = a[len(a)/2+1:]
+
+    if len(b) % 2 == 0:
+        bfront = b[0:len(b)/2]
+        bback = b[len(b)/2:]
+    else:
+        bfront = b[0:len(b)/2+1]
+        bback = b[len(b)/2+1:]
+
+    return afront + bfront + aback + bback
