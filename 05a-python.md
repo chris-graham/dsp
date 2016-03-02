@@ -12,7 +12,8 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> - lists & tuples are both a sequence of values which can be any type. Both are indexed by integers. The major difference between the two is that lists are mutable and tuples are immutable.
+- tuples will work as keys in dictionaries because only immutable elements can be used as dictionary keys (as dictionary keys must be hashable). e.g. you couldn't use a tuple that contained a mutible object such as a list.
 
 ---
 
@@ -20,8 +21,25 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> Sets and Lists are both collections of objects and are both mutable. However, a set is unordered, unindexed and does not allow duplicate members; all of which are untrue for lists. Sets also support mathmatical operations like union, intersection, etc. Regarding performance, lists perform better when iterating, sets perform better at membership testing, so it depends on what you're doing as to which performs better. Lists are most likely the better alternative for general use unless you explicitly need the features of a set.
+Set Example:
+'''
+>>> test_set = set(['a', 'b', 'c'])
+>>> test_set.add('a')
+>>> 'a' in test_set
+True
+>>> print test_set
+set(['a', 'c', 'b'])
+'''
+List Example:
+'''
+>>> test_list = ['a', 'b', 'c']
+>>> test_list.append('a')
+>>> 'a' in test_list
+True
+>>> print test_list
+['a', 'b', 'c', 'a']
+'''
 ---
 
 ###Q3. Lambda Function
@@ -51,7 +69,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 937 days
 
 b.  
 ```
@@ -59,7 +77,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513 days
 
 c.  
 ```
@@ -67,7 +85,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850 days
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
