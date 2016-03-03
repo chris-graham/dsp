@@ -61,12 +61,15 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> List comprehensions are a concise way to create lists instead of using a for loop. Functionally speaking, a list comprehension is comperable to a map & filter (both return list objects), however, list comprehensions are almost always preferred as they're the de-facto 'Pythonic' way to do iteration. If you already have a function defined, it might make more sense to use map & filter since maps accept a function as a parameter.
 - List example
+
 '''
 squares = [x**2 for x in range(10) if x**2 < 10]
 print squares
 [0, 1, 4, 9]
 '''
+
 - Map & Filter equivalant
+
 '''
 def square(x):
     return x**2
