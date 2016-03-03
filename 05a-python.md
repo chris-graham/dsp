@@ -71,11 +71,9 @@ print squares
 ```
 def square(x):
     return x**2
-
 squares = map(square, range(10))
 print squares
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-
 single_digit_squares = filter(lambda x: x < 10, squares)
 print single_digit_squares
 [0, 1, 4, 9]
@@ -85,7 +83,6 @@ print single_digit_squares
 characters = {x for x in 'aabcccdefff' if x not in 'cde'}
 print characters
 set(['a', 'b', 'f'])
-
 {x: x*5 for x in range(10)}
 {0: 0, 1: 5, 2: 10, 3: 15, 4: 20, 5: 25, 6: 30, 7: 35, 8: 40, 9: 45}
 ```
