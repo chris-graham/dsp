@@ -23,23 +23,24 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Sets and Lists are both collections of objects and are both mutable. However, a set is unordered, unindexed and does not allow duplicate members; all of which are untrue for lists. Sets also support mathmatical operations like union, intersection, etc. Regarding performance, lists perform better when iterating, sets perform better when membership testing, so it depends on what you're doing as to which performs better. Lists are most likely the better alternative for general use unless you explicitly need the features of a set.
 - Set Example:
-'''
+```
 test_set = set(['a', 'b', 'c'])
 test_set.add('a')
 'a' in test_set
 True
 print test_set
 set(['a', 'c', 'b'])
-'''
+```
 - List Example:
-'''
+```
 test_list = ['a', 'b', 'c']
 test_list.append('a')
 'a' in test_list
 True
 print test_list
 ['a', 'b', 'c', 'a']
-'''
+```
+
 ---
 
 ###Q3. Lambda Function
@@ -47,11 +48,11 @@ print test_list
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> Lambda is a tool for building functions similar to 'def', however, lambda is an anonymous function and can only be used once. Lambda can only take a single expression, and that expression must return a value. Lambda functions aren't necessary but are convenient and produce cleaner code, especially when the parameter supplied requires a function.
-'''
+```
 addresses = [('161 Adelphi', 'Brooklyn', 'NY', 11205), ('119 Gates', 'Brooklyn', 'NY', 11238), ('228 W 71st', 'New York', 'NY', 10023), ('134 W 86th', 'New York', 'NY', 10024)]
 sorted(addresses, key=lambda address: address[3])
 [('228 W 71st', 'New York', 'NY', 10023), ('134 W 86th', 'New York', 'NY', 10024), ('161 Adelphi', 'Brooklyn', 'NY', 11205), ('119 Gates', 'Brooklyn', 'NY', 11238)]
-'''
+```
 
 ---
 
@@ -61,16 +62,13 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> List comprehensions are a concise way to create lists instead of using a for loop. Functionally speaking, a list comprehension is comperable to a map & filter (both return list objects), however, list comprehensions are almost always preferred as they're the de-facto 'Pythonic' way to do iteration. If you already have a function defined, it might make more sense to use map & filter since maps accept a function as a parameter.
 - List example
-
-'''
+```
 squares = [x**2 for x in range(10) if x**2 < 10]
 print squares
 [0, 1, 4, 9]
-'''
-
+```
 - Map & Filter equivalant
-
-'''
+```
 def square(x):
     return x**2
 
@@ -81,16 +79,16 @@ print squares
 single_digit_squares = filter(lambda x: x < 10, squares)
 print single_digit_squares
 [0, 1, 4, 9]
-'''
+```
 - Set & Dictionary comprehensions
-'''
+```
 characters = {x for x in 'aabcccdefff' if x not in 'cde'}
 print characters
 set(['a', 'b', 'f'])
 
 {x: x*5 for x in range(10)}
 {0: 0, 1: 5, 2: 10, 3: 15, 4: 20, 5: 25, 6: 30, 7: 35, 8: 40, 9: 45}
-'''
+```
 
 ---
 
