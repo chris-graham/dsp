@@ -81,7 +81,8 @@ class Faculty:
 		return set(domains)
 
 
-# Testing class and functions
+# Testing class and functions (commented out as I'm using the class elsewhere)
+'''
 f = Faculty('faculty.csv')
 emails = f.get_emails()
 
@@ -89,3 +90,4 @@ print 'Question 1\n' + str(f.get_degrees())
 print '\nQuestion 2\n' + str(f.get_titles())
 print '\nQuestion 3\n' + str(emails)
 print '\nQuestion 4\n' + str(f.get_domains(emails))
+'''
